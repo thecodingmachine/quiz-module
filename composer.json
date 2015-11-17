@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-    	"mouf/splash-common": "~7.0"
+    	"mouf/mvc.splash-common": "~7.0"
     },
     "autoload": {
         "psr-4": {
