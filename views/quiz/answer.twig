@@ -23,9 +23,9 @@
 
     <p>
     {% if quiz.questions|length == questionIndex + 1  %}
-        <a class="btn-quiz" href="results?quiz={{ quizIndex }}{% for previousAnswer in previousAnswers %}&previousAnswers[{{ loop.index0 }}]={{ previousAnswer }}{% endfor %}">Fin du test!</a>
+        <a class="btn-quiz" href="results?quiz={{ quizIndex }}{% for previousAnswer in previousAnswers %}&previousAnswers[{{ loop.index0 }}]={{ previousAnswer }}{% endfor %}">View results!</a>
     {% else %}
-        {% spaceless %}<a class="btn-quiz" href="question?quiz={{ quizIndex }}&question={{ questionIndex+1 }}{% for previousAnswer in previousAnswers %}&previousAnswers[{{ loop.index0 }}]={{ previousAnswer }}{% endfor %}">Question suivante!</a>{% endspaceless %}
+        {% spaceless %}<a class="btn-quiz" href="question?quiz={{ quizIndex }}&question={{ questionIndex+1 }}{% for previousAnswer in previousAnswers %}&previousAnswers[{{ loop.index0 }}]={{ previousAnswer }}{% endfor %}">Next question!</a>{% endspaceless %}
     {% endif %}
     </p>
 </div>
