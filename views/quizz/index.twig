@@ -1,0 +1,7 @@
+<div class="quiz">
+<h1>Choose your quiz... wisely!</h1>
+
+{% for quizz in quizzes %}
+    <p><a class="btn-quiz huge" href="question?quizz={{ loop.index0 }}">{{ quizz.name }}</a></p>
+{% endfor %}
+</div>

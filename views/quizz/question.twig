@@ -1,0 +1,19 @@
+<div class="quiz">
+    <h3>{{ quizz.name }}</h3>
+    <div class="questionnumber">Question {{ questionIndex + 1 }} / {{ quizz.questions|length }}</div>
+
+    <div class="question">{{ question.questionText|raw }}</div>
+
+    <form action="quizz-answer" method="post">
+    {% for possibleAnswer in question.possibleAnswers %}
+        <p>
+            <button name="answer" value="{{ loop.index0 }}" class="btn-quiz answer{{ loop.index }}">Answer {{ loop.index }} : {{ possibleAnswer|raw }}</button>
+        </p>
+    {% endfor %}
+        <input type="hidden" name="quizz" value="{{ quizzIndex }}" />
+        <input type="hidden" name="question" value="{{ questionIndex }}" />
+        {% for previousAnswer in previousAnswers %}
+        <input type="hidden" name="previousAnswers[{{ loop.index0 }}]" value="{{ previousAnswer }}" />
+        {% endfor %}
+    </form>
+</div>
