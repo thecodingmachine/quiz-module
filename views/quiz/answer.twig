@@ -14,6 +14,13 @@
         Correct answer : {{ question.correctAnswer+1 }} - {{ question.possibleAnswers[question.correctAnswer]|raw }}
     </p>
 
+    {% if question.explanation %}
+    <div class="explanation">
+        <div class="why"><i class="fa fa-question-circle"></i> <i>But why?</i></div>
+        {{ question.explanation|raw }}
+    </div>
+    {% endif %}
+
     <p>
     {% if quiz.questions|length == questionIndex + 1  %}
         <a class="btn-quiz" href="results?quiz={{ quizIndex }}{% for previousAnswer in previousAnswers %}&previousAnswers[{{ loop.index0 }}]={{ previousAnswer }}{% endfor %}">Fin du test!</a>
