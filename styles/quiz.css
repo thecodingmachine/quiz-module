@@ -29,6 +29,7 @@
 }
 
 .quiz .btn-quiz {
+    padding: 0;
     -moz-user-select: none;
     cursor: pointer;
     display: inline-block;
@@ -86,6 +87,7 @@
     background-color: #67e262;
     width: 180px;
     height: 180px;
+    line-height: 180px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -99,6 +101,7 @@
     background-color: #e26762;
     width: 180px;
     height: 180px;
+    line-height: 180px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
