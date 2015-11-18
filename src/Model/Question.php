@@ -1,7 +1,7 @@
 <?php
 
 
-namespace TheCodingMachine\Quizz\Model;
+namespace TheCodingMachine\Quiz\Model;
 
 
 class Question

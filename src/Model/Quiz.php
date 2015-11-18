@@ -1,28 +1,28 @@
 <?php
 
 
-namespace TheCodingMachine\Quizz\Model;
+namespace TheCodingMachine\Quiz\Model;
 
 /**
- * An object representing a Quizz
+ * An object representing a Quiz
  */
-class Quizz
+class Quiz
 {
     /**
-     * The name of the Quizz
+     * The name of the Quiz
      * @var string
      */
     private $name;
 
     /**
-     * The questions of the Quizz
+     * The questions of the Quiz
      * @var Question[]
      */
     private $questions;
 
     /**
-     * @param string $name The name of the Quizz
-     * @param Question[] $questions The questions of the Quizz
+     * @param string $name The name of the Quiz
+     * @param Question[] $questions The questions of the Quiz
      */
     public function __construct($name, array $questions)
     {

@@ -1,7 +1,7 @@
 {
-    "name": "thecodingmachine/quizz-module",
+    "name": "thecodingmachine/quiz-module",
     "description": "",
-    "keywords": ["psr-7", "quizz", "mouf"],
+    "keywords": ["psr-7", "quiz", "mouf"],
     "license": "MIT",
     "authors": [
         {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TheCodingMachine\\Quizz\\": "src/"
+            "TheCodingMachine\\Quiz\\": "src/"
         }
     }
 }
