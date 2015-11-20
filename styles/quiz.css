@@ -140,3 +140,7 @@
     border-radius: 90px;
     margin-bottom: 20px;
 }
+
+.quiz pre {
+    text-align: left;
+}
